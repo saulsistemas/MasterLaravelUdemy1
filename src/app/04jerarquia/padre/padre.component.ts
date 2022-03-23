@@ -16,4 +16,8 @@ export class PadreComponent implements OnInit {
     }, 2000);
   }
 
+  getValor($event:any){
+    this.valorPadre=$event.nuevoValor;
+  }
+
 }
