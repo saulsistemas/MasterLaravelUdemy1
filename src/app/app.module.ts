@@ -8,6 +8,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { PipesAngularComponent } from './02pipes/pipes-angular/pipes-angular.component';
+import { DirectivaNgIfComponent } from './03directivas/directiva-ng-if/directiva-ng-if.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PipesAngularComponent } from './02pipes/pipes-angular/pipes-angular.com
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
-    PipesAngularComponent
+    PipesAngularComponent,
+    DirectivaNgIfComponent
   ],
   imports: [
     BrowserModule,
