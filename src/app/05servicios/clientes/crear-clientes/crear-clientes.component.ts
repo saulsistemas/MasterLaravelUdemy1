@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientesService } from '../../clientes.service';
+import { Cliente } from '../model/cliente.model';
 
 @Component({
   selector: 'app-crear-clientes',
@@ -7,7 +8,7 @@ import { ClientesService } from '../../clientes.service';
   styleUrls: ['./crear-clientes.component.css']
 })
 export class CrearClientesComponent implements OnInit {
-  cliente:any={
+  cliente:Cliente={//INTERFACE CONTRATO
     nombre:'',//ESTOS ESTAN EL TEXT DE FORMULARIO
     dni:'',
     domicilio:'',
