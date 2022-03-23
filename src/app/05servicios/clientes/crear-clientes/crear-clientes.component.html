@@ -1,0 +1,19 @@
+<div class="card">
+    <form >
+        <div class="row">
+            <label>Nombre</label>
+            <input type="text" [(ngModel)]="cliente.nombre" name="nombre">
+        </div>
+        <div class="row">
+            <label>DNI</label>
+            <input type="text" [(ngModel)]="cliente.dni" name="dni">
+        </div>
+        <div class="row">
+            <label>Localidad</label>
+            <input type="text" [(ngModel)]="cliente.domicilio" name="domicilio">
+        </div>
+        <div class="row end">
+            <button type="button" (click)="addCliente()">Add</button>
+        </div>
+    </form>
+</div>

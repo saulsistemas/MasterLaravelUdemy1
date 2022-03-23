@@ -13,4 +13,7 @@ export class ClientesService {
   getCliente(){
     return this.clientes;
   }
+  setCliente(cliente:any){
+    this.clientes.push(cliente);
+  }
 }

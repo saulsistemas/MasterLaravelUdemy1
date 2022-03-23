@@ -8,11 +8,10 @@ import { ClientesService } from '../../clientes.service';
 })
 export class ListadoClientesComponent implements OnInit {
 
+  clientes:any;
   constructor(private clientesService:ClientesService) { }
 
-  clientes:any;
   ngOnInit(): void {
-    console.log(this.clientesService.getCliente());
     this.clientes = this.clientesService.getCliente();
   }
   

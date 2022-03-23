@@ -16,6 +16,7 @@ import { DirectivaNgStyleComponent } from './03directivas/directiva-ng-style/dir
 import { PadreComponent } from './04jerarquia/padre/padre.component';
 import { HijoComponent } from './04jerarquia/hijo/hijo.component';
 import { ListadoClientesComponent } from './05servicios/clientes/listado-clientes/listado-clientes.component';
+import { CrearClientesComponent } from './05servicios/clientes/crear-clientes/crear-clientes.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ListadoClientesComponent } from './05servicios/clientes/listado-cliente
     DirectivaNgStyleComponent,
     PadreComponent,
     HijoComponent,
-    ListadoClientesComponent
+    ListadoClientesComponent,
+    CrearClientesComponent
   ],
   imports: [
     BrowserModule,

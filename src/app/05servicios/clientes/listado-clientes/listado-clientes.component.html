@@ -1,7 +1,14 @@
 <div class="card">
     <table>
         <tr>
-            
+            <th>Cliente</th>
+            <th>DNI</th>
+            <th>Localidad</th>
+        </tr>
+        <tr *ngFor="let cliente of clientes">
+            <td> {{cliente.nombre}} </td>
+            <td> {{cliente.dni}} </td>
+            <td> {{cliente.domicilio}} </td>
         </tr>
     </table>
 </div>
