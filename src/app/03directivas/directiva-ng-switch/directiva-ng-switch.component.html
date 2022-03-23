@@ -1,0 +1,11 @@
+<div class="card">
+    <h1>Ejemplo de directiva *ngSwitch</h1>
+    <p>Introduzca su putuación</p>
+    <input type="text" [(ngModel)]="mensaje">
+    <div [ngSwitch]="mensaje">
+        <div *ngSwitchCase="'success'">El registro fue creado correctamente</div>
+        <div *ngSwitchCase="'warning'">Error de conexion</div>
+        <div *ngSwitchCase="'danger'">servicio no disponible</div>
+    </div>
+    
+</div>
