@@ -9,6 +9,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { FormsModule } from '@angular/forms';
 import { PipesAngularComponent } from './02pipes/pipes-angular/pipes-angular.component';
 import { DirectivaNgIfComponent } from './03directivas/directiva-ng-if/directiva-ng-if.component';
+import { DirectivaNgSwitchComponent } from './03directivas/directiva-ng-switch/directiva-ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DirectivaNgIfComponent } from './03directivas/directiva-ng-if/directiva
     EventBindingComponent,
     TwoWayBindingComponent,
     PipesAngularComponent,
-    DirectivaNgIfComponent
+    DirectivaNgIfComponent,
+    DirectivaNgSwitchComponent
   ],
   imports: [
     BrowserModule,
