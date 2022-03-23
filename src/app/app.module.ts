@@ -15,6 +15,7 @@ import { DirectivaNgClassComponent } from './03directivas/directiva-ng-class/dir
 import { DirectivaNgStyleComponent } from './03directivas/directiva-ng-style/directiva-ng-style.component';
 import { PadreComponent } from './04jerarquia/padre/padre.component';
 import { HijoComponent } from './04jerarquia/hijo/hijo.component';
+import { ListadoClientesComponent } from './05servicios/clientes/listado-clientes/listado-clientes.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HijoComponent } from './04jerarquia/hijo/hijo.component';
     DirectivaNgClassComponent,
     DirectivaNgStyleComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    ListadoClientesComponent
   ],
   imports: [
     BrowserModule,
