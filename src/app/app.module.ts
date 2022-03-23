@@ -7,6 +7,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { PipesAngularComponent } from './02pipes/pipes-angular/pipes-angular.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     InterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    PipesAngularComponent
   ],
   imports: [
     BrowserModule,
