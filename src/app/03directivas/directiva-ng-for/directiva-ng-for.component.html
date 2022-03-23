@@ -1,0 +1,17 @@
+<div class="card">
+    <h1>Ejemplo de directiva *ngFor</h1>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>NOMBRE</th>
+            <th>RUC</th>
+        </tr>
+        <tr *ngFor="let provedor of proveedores; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{provedor.nombre}}</td>
+            <td>{{provedor.ruc}}</td>
+        </tr>
+    </table>
+    
+    
+</div>
