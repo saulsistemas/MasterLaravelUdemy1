@@ -11,6 +11,7 @@ import { PipesAngularComponent } from './02pipes/pipes-angular/pipes-angular.com
 import { DirectivaNgIfComponent } from './03directivas/directiva-ng-if/directiva-ng-if.component';
 import { DirectivaNgSwitchComponent } from './03directivas/directiva-ng-switch/directiva-ng-switch.component';
 import { DirectivaNgForComponent } from './03directivas/directiva-ng-for/directiva-ng-for.component';
+import { DirectivaNgClassComponent } from './03directivas/directiva-ng-class/directiva-ng-class.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DirectivaNgForComponent } from './03directivas/directiva-ng-for/directi
     PipesAngularComponent,
     DirectivaNgIfComponent,
     DirectivaNgSwitchComponent,
-    DirectivaNgForComponent
+    DirectivaNgForComponent,
+    DirectivaNgClassComponent
   ],
   imports: [
     BrowserModule,
