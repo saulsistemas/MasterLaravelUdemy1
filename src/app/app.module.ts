@@ -17,6 +17,10 @@ import { PadreComponent } from './04jerarquia/padre/padre.component';
 import { HijoComponent } from './04jerarquia/hijo/hijo.component';
 import { ListadoClientesComponent } from './05servicios/clientes/listado-clientes/listado-clientes.component';
 import { CrearClientesComponent } from './05servicios/clientes/crear-clientes/crear-clientes.component';
+import { InicioComponent } from './06routing/inicio/inicio.component';
+import { AppRoutingModule } from './app-routing.module';
+import { VentasComponent } from './06routing/ventas/ventas.component';
+import { ComprasComponent } from './06routing/compras/compras.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +38,15 @@ import { CrearClientesComponent } from './05servicios/clientes/crear-clientes/cr
     PadreComponent,
     HijoComponent,
     ListadoClientesComponent,
-    CrearClientesComponent
+    CrearClientesComponent,
+    InicioComponent,
+    VentasComponent,
+    ComprasComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
