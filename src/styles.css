@@ -73,6 +73,12 @@ form .row input {
 form .row input:focus {
   outline: none;
 }
+form button[disabled]{
+  border: 1px solid gray;
+  background-color: gray;
+  cursor: not-allowed;
+
+}
 form .row.end {
   flex-direction: row;
   justify-content: flex-end;

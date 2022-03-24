@@ -22,4 +22,9 @@ export class CrearClientsComponent implements OnInit {
     })
   }
 
+  enviarCliente(){
+    console.log(this.form.value);
+    
+  }
+
 }
