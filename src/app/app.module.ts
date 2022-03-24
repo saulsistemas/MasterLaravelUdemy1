@@ -21,6 +21,7 @@ import { InicioComponent } from './06routing/inicio/inicio.component';
 import { AppRoutingModule } from './app-routing.module';
 import { VentasComponent } from './06routing/ventas/ventas.component';
 import { ComprasComponent } from './06routing/compras/compras.component';
+import { NavComponent } from './06routing/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ComprasComponent } from './06routing/compras/compras.component';
     CrearClientesComponent,
     InicioComponent,
     VentasComponent,
-    ComprasComponent
+    ComprasComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

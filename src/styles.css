@@ -14,7 +14,15 @@ button {
   color: white;
   transition: all 400ms ease-in-out;
 }
+button.outline {
+  color: #008489;
+  background-color: white;
+}
 button:hover {
+  background-color: #025b5e;
+}
+button.outline:hover {
+  color: white;
   background-color: #025b5e;
 }
 button.icon {
@@ -87,6 +95,7 @@ table td {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  transition: 600ms opacity linear;
 }
 
 .row {
@@ -203,6 +212,24 @@ table td {
   margin-right: 0.5rem;
 }
 
+nav {
+  height: 80px;
+  width: 100%;
+  padding: 0 1rem;
+  box-shadow: 2px 2px 4px lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav div {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+nav div.active {
+  color: #008489;
+}
+
 .player-box {
   height: 120px;
   max-width: 720px;
@@ -257,6 +284,10 @@ body {
 
 h1 {
   font-size: 1.5rem;
+  color: #008489;
+}
+
+b {
   color: #008489;
 }
 
