@@ -6,7 +6,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipesAngularComponent } from './02pipes/pipes-angular/pipes-angular.component';
 import { DirectivaNgIfComponent } from './03directivas/directiva-ng-if/directiva-ng-if.component';
 import { DirectivaNgSwitchComponent } from './03directivas/directiva-ng-switch/directiva-ng-switch.component';
@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { VentasComponent } from './06routing/ventas/ventas.component';
 import { ComprasComponent } from './06routing/compras/compras.component';
 import { NavComponent } from './06routing/nav/nav.component';
+import { CrearClientsComponent } from './07formularios/clientes/crear-clients/crear-clients.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +44,14 @@ import { NavComponent } from './06routing/nav/nav.component';
     InicioComponent,
     VentasComponent,
     ComprasComponent,
-    NavComponent
+    NavComponent,
+    CrearClientsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
