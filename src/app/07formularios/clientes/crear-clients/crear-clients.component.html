@@ -4,6 +4,7 @@
             <div class="row">
                 <div class="col-100">
                     <label for="">Nombre</label>
+                    <span *ngIf="form.controls.nombre.pristine">llenar datos</span>
                     <input type="text" formControlName="nombre">
                 </div>
             </div>
@@ -25,7 +26,15 @@
                     <input type="text" formControlName="localidad">
                 </div>
             </div>
-            <pre>{{form.value |json}}</pre>
+            <pre>
+                Estado pristine: {{form.controls.nombre.pristine }}
+                Estado dirty: {{form.controls.nombre.dirty }}
+                Estado touched: {{form.controls.nombre.touched }}
+                Estado untouched: {{form.controls.nombre.untouched }}
+                Estado valid: {{form.controls.nombre.valid }}
+                Estado invalid: {{form.controls.nombre.invalid }}
+
+            </pre>
         </form>
     </div>
 </div>

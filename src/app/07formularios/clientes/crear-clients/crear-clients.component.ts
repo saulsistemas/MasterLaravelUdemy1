@@ -8,7 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class CrearClientsComponent implements OnInit {
 
-  form:FormGroup;
+  form:any;
 
   
   constructor() { }
