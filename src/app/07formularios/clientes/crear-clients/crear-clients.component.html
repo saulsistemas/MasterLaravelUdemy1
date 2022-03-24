@@ -3,14 +3,14 @@
         <form [formGroup]="form">
             <div class="row">
                 <div class="col-100">
-                    <label for="">Nombre</label>
-                    <span *ngIf="form.controls.nombre.pristine">llenar datos</span>
+                    <label for="">Nombre <span *ngIf="form.controls.nombre.pristine" class="danger"> completar campo</span></label>
+                    
                     <input type="text" formControlName="nombre">
                 </div>
             </div>
             <div class="row">
                 <div class="col-100">
-                    <label for="">ruc</label>
+                    <label for="">ruc <span *ngIf="form.controls.ruc.invalid" class="danger"> campo obligatiro 9 caracteres</span></label>
                     <input type="text" formControlName="ruc">
                 </div>
             </div>

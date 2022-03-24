@@ -58,9 +58,9 @@ form .row {
   justify-content: flex-start;
   align-items: flex-start;
 }
-form .row label {
+form .row label span.danger{
   font-size: 0.8rem;
-  margin-bottom: 0.3rem;
+  color: red;
 }
 form .row input {
   border: 1px solid #67666e;
