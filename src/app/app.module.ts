@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
@@ -23,6 +23,8 @@ import { VentasComponent } from './06routing/ventas/ventas.component';
 import { ComprasComponent } from './06routing/compras/compras.component';
 import { NavComponent } from './06routing/nav/nav.component';
 import { CrearClientsComponent } from './07formularios/clientes/crear-clients/crear-clients.component';
+import { IniciosComponent } from './08http/inicios/inicios.component';
+import { ListadoClientitosComponent } from './08http/clientitos/listado-clientitos/listado-clientitos.component';
 
 @NgModule({
   declarations: [
@@ -45,13 +47,16 @@ import { CrearClientsComponent } from './07formularios/clientes/crear-clients/cr
     VentasComponent,
     ComprasComponent,
     NavComponent,
-    CrearClientsComponent
+    CrearClientsComponent,
+    IniciosComponent,
+    ListadoClientitosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
