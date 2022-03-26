@@ -1,1 +1,24 @@
-<p>listado-clientitos works!</p>
+<div class="card">
+    <h1>Listado de clientes</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>EMAIL</th>
+            <th>FIRST </th>
+        </tr>
+        <tr *ngFor="let clientito of clientitos">
+            <td>{{clientito.id}}</td>
+            <td>{{clientito.email}}</td>
+            <td>{{clientito.first_name}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="card">
+    <h1>Un solo Cliente</h1>
+    <input type="text" [(ngModel)]="id_cliente" (keyup)="cargarUnCliente()">
+    <div *ngIf="usuario">
+        <img src="{{usuario.avatar}}"  width="200" >
+        {{usuario.id | json}}
+    </div>
+</div>
